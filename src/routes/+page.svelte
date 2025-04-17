@@ -1,7 +1,7 @@
 <script>
-    import {HeroSection, SectionHeadline} from "$components";
+    import {HeroSection, SectionHeadline, AboutMeSection} from "$components";
 
 </script>
 
 <HeroSection/>
-<SectionHeadline sectionName={"about-me"} >About Me</SectionHeadline>
+<AboutMeSection />

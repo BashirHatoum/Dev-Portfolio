@@ -1,5 +1,5 @@
 <script lang="ts">
-	import {SectionHeadline, Button} from "$components";
+	import {SectionHeadline, Button, ExperienceTable} from "$components";
     import image from "$assets/Media.jpg";
 	import { goto } from "$app/navigation";
     
@@ -33,6 +33,23 @@
               </p>
             <Button className="mt-m" {onclick}>Tell me about youe project</Button>
         </div>
-        
     </div> 
+    <ExperienceTable />
 </section>
+
+<style>
+   .content-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+   }
+   .image{
+    width: 42%;
+    border-radius: 20px;
+    object-fit: cover;
+   } 
+   .text{
+    width: 55%;
+    text-align: left;
+   }
+</style>

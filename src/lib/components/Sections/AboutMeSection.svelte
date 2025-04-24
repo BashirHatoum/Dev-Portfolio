@@ -2,10 +2,9 @@
 	import {SectionHeadline, Button, ExperienceTable} from "$components";
     import image from "$assets/Media.jpg";
 	import { goto } from "$app/navigation";
-    import type {DevExperience} from "$lib/types/sanity"; 
 	
     interface AboutMeProps {
-        workExperience: DevExperience[];
+        workExperience: SanityWorkExperience[];
     }
     let {workExperience}: AboutMeProps =$props();
     function onclick(){

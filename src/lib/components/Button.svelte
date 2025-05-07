@@ -3,7 +3,7 @@
 
     interface ButtonProps{
         children: Snippet,
-        onclick: ((e:MouseEvent)=>void | (()=> void))
+        onclick: ((e:MouseEvent)=>void)| (()=> void)
         className?: string;
     }
     let {children, className, ...props}: ButtonProps = $props();
@@ -20,5 +20,9 @@
         font-size: 24px;
         padding: 14px 40px;
         border-radius: 10px;
+    }
+    .nav-bar {
+        padding: 10px 24px;
+        font-size: 20px;
     }
 </style>
